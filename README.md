@@ -9,7 +9,7 @@ Originally forked from https://github.com/William-Lake/NLP-API
 # Install
 
 ```
-pip3 install nltk bottle action
+pip3 install nltk bottle action vaderSentiment
 pip3 install git+https://github.com/vibby/nalapi.git@stable#egg=nalapi
 ```
 Set up NLTK data
