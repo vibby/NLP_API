@@ -1,5 +1,5 @@
 __pycache__
 .idea
 /build
-/nlpapi_pkg_vibby.egg-info
+/*.egg-info
 /dist

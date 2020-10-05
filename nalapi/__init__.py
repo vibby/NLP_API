@@ -1,4 +1,4 @@
-"""Top-level package for NLP API."""
+"""Top-level package for napali."""
 
 __author__ = """William Lake"""
 __email__ = 'contact@william-lake.com'

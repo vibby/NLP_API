@@ -1,8 +1,8 @@
 from action.abstract_action import AbstractAction
-from nlp_api.action.content_reversal import ContentReversal
-from nlp_api.action.word_extraction import WordExtraction
-from nlp_api.action.word_pos_tagging import WordPosTagging
-from nlp_api.action.consolidation import Consolidation
+from nalapi.action.content_reversal import ContentReversal
+from nalapi.action.word_extraction import WordExtraction
+from nalapi.action.word_pos_tagging import WordPosTagging
+from nalapi.action.consolidation import Consolidation
 
 
 class TestContentReversal:

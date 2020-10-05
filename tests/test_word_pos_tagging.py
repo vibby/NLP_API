@@ -1,7 +1,7 @@
 """Tests action.WordPosTagging"""
-from nlp_api.action.abstract_action import AbstractAction
-from nlp_api.action.word_pos_tagging import WordPosTagging
-from nlp_api.action.word_extraction import WordExtraction
+from nalapi.action.abstract_action import AbstractAction
+from nalapi.action.word_pos_tagging import WordPosTagging
+from nalapi.action.word_extraction import WordExtraction
 
 
 class TestWordPosTagging:

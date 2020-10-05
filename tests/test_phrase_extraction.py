@@ -1,7 +1,7 @@
-from nlp_api.action.abstract_action import AbstractAction
-from nlp_api.action.phrase_extraction import PhraseExtraction
-from nlp_api.action.word_extraction import WordExtraction
-from nlp_api.action.word_pos_tagging import WordPosTagging
+from nalapi.action.abstract_action import AbstractAction
+from nalapi.action.phrase_extraction import PhraseExtraction
+from nalapi.action.word_extraction import WordExtraction
+from nalapi.action.word_pos_tagging import WordPosTagging
 
 
 class TestPhraseExtraction:
