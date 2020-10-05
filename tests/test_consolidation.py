@@ -1,5 +1,5 @@
 from action.abstract_action import AbstractAction
-from nlp_api.action.consolidation import Consolidation
+from nalapi.action.consolidation import Consolidation
 
 
 class TestConsolidation:

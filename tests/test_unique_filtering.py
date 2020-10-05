@@ -1,6 +1,6 @@
-from nlp_api.action.abstract_action import AbstractAction
-from nlp_api.action.unique_filtering import UniqueFiltering
-from nlp_api.action.word_extraction import WordExtraction
+from nalapi.action.abstract_action import AbstractAction
+from nalapi.action.unique_filtering import UniqueFiltering
+from nalapi.action.word_extraction import WordExtraction
 
 
 class TestUniqueFiltering:

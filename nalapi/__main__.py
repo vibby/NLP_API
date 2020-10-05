@@ -1,4 +1,4 @@
-"""The entrypoint for starting NLPAPI."""
+"""The entrypoint for starting nalapi."""
 import argparse
 import logging
 import sys
@@ -7,12 +7,12 @@ import sys
 try:
 
     # If running from deployment
-    from .nlp_api import NLPAPI
+    from .nalapi import nalapi
 
 except ImportError as e:
 
     # If running from source.
-    from nlp_api import NLPAPI
+    from nalapi import nalapi
 
 
 def gather_args():
@@ -31,21 +31,21 @@ def gather_args():
         'host',
         nargs='?',
         default='localhost',
-        help='The host NLP-API should run on. Defaults to localhost.')
+        help='The host nalapi should run on. Defaults to localhost.')
 
     arg_parser.add_argument(
         'port',
         nargs='?',
         type=int,
         default=8888,
-        help='The port NLP-API should be available on. Defaults to 8888.')
+        help='The port nalapi should be available on. Defaults to 8888.')
 
     arg_parser.add_argument(
         '-v',
         '--verbose',
         action='store_true',
         default=False,
-        help='Whether or not to provide verbose logging output when running NLP-API.')
+        help='Whether or not to provide verbose logging output when running nalapi.')
 
     args = arg_parser.parse_args()
 
@@ -53,7 +53,7 @@ def gather_args():
 
 
 def main():
-    """The main method, starts NLPAPI.
+    """The main method, starts nalapi.
     """
     logging.debug('Entering main method')
 
@@ -63,15 +63,15 @@ def main():
 
     logging.basicConfig(level=logging_level)
 
-    nlp_api = NLPAPI()
+    nalapi = nalapi()
 
-    logging.debug(f'Starting NLPAPI with params: [HOST: {host}, PORT: {port}]')
+    logging.debug(f'Starting nalapi with params: [HOST: {host}, PORT: {port}]')
 
-    nlp_api.run(host=host, port=port, debug=True)
+    nalapi.run(host=host, port=port, debug=True)
 
 
 if __name__ == "__main__":
-    """The main entry point for NLPAPI.
+    """The main entry point for nalapi.
     """
 
     sys.exit(main())  # pragma: no cover

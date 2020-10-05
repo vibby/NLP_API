@@ -1,5 +1,5 @@
-from nlp_api.action.abstract_action import AbstractAction
-from nlp_api.action.sentence_extraction import SentenceExtraction
+from nalapi.action.abstract_action import AbstractAction
+from nalapi.action.sentence_extraction import SentenceExtraction
 
 
 class TestSentenceExtraction:

@@ -4,15 +4,15 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="NLP_API-pkg-vibby", # Replace with your own username
+    name="nalapi",
     version="0.0.1",
     author="Vibby",
     author_email="contact@vibby.fr",
-    description="Expose some NLTK tools to HTTP API",
+    description="Expose some NLTK tools to an API over HTTP",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/vibby/NLP_API",
-    packages=setuptools.find_packages(),
+    url="https://github.com/vibby/nalapi",
+    packages=['nalapi'],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

@@ -1,4 +1,4 @@
-"""Unit tests for NLPAPI."""
+"""Unit tests for nalapi."""
 
 import pytest
 import socket
@@ -6,8 +6,8 @@ import time
 import threading
 import requests
 
-from nlp_api.nlp_api import NLPAPI
-from nlp_api.action.abstract_action import AbstractAction
+from nalapi.nalapi import nalapi
+from nalapi.action.abstract_action import AbstractAction
 
 
 def wait_for_server_startup():
@@ -40,9 +40,9 @@ def wait_for_server_startup():
 def start_server_thread():
     """Starts the thread which boots the testing server."""
 
-    nlp_api = NLPAPI()
+    nalapi = nalapi()
 
-    nlp_api.run(host='localhost', port=8888, debug=True)
+    nalapi.run(host='localhost', port=8888, debug=True)
 
 
 @pytest.fixture(scope='session', autouse=True)
@@ -59,7 +59,7 @@ def setUpClass():
     wait_for_server_startup()
 
 
-class TestNLPAPI:
+class Testnalapi:
 
     BASE_URL = 'http://localhost:8888/'
 
@@ -467,13 +467,13 @@ class TestNLPAPI:
 
         response = requests.get(url,
                                 json={
-                                    NLPAPI.TEXT: self.TEXT})
+                                    nalapi.TEXT: self.TEXT})
 
         assert response.status_code == expected_status_code
 
-        assert NLPAPI.CONTENT_TYPE in response.headers
+        assert nalapi.CONTENT_TYPE in response.headers
 
-        assert response.headers[NLPAPI.CONTENT_TYPE] == 'application/json'
+        assert response.headers[nalapi.CONTENT_TYPE] == 'application/json'
 
         json = response.json()
 
@@ -524,7 +524,7 @@ class TestNLPAPI:
 
         response = requests.get(url,
                                 json={
-                                    NLPAPI.TEXT: self.TEXT})
+                                    nalapi.TEXT: self.TEXT})
 
         assert response.status_code == 200
 

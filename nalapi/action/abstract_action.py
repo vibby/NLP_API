@@ -100,6 +100,6 @@ class AbstractAction(ABC):
             new_content[self.HISTORY].append([self.name, self.outcome])
 
         # Reset outcome since this instance is being used
-        # for future processing in nlp_api.
+        # for future processing in nalapi.
         # FIXME I really don't like this.
         self.outcome = self.SUCCESS

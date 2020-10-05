@@ -1,6 +1,6 @@
-from nlp_api.action.abstract_action import AbstractAction
-from nlp_api.action.sentiment_calculation import SentimentCalculation
-from nlp_api.action.sentence_extraction import SentenceExtraction
+from nalapi.action.abstract_action import AbstractAction
+from nalapi.action.sentiment_calculation import SentimentCalculation
+from nalapi.action.sentence_extraction import SentenceExtraction
 
 
 class TestSentimentCalculation:

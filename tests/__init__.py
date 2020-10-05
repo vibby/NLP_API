@@ -1,4 +1,4 @@
-"""Unit test package for nlp_api."""
+"""Unit test package for nalapi."""
 import os
 import sys
 

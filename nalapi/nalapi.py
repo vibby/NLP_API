@@ -21,7 +21,7 @@ from action.consolidation import Consolidation
 from action.sentiment_calculation import SentimentCalculation
 
 
-class NLPAPI(Bottle):
+class nalapi(Bottle):
 
     TEXT = 'text'
     CONTENT_TYPE = 'Content-Type'
@@ -30,9 +30,9 @@ class NLPAPI(Bottle):
         """Constructor
         """
 
-        super(NLPAPI, self).__init__()
+        super(nalapi, self).__init__()
 
-        logging.debug('Starting NLPAPI')
+        logging.debug('Starting nalapi')
 
         """The actions to take when a given url path section is encountered."""
         self.__actions = [
@@ -60,7 +60,7 @@ class NLPAPI(Bottle):
         self.route('/:url#.+#', callback=self.process)
 
     def help(self):
-        """Provides helpful info for using NLP-API.
+        """Provides helpful info for using nalapi.
 
         :return: Some info about using the api and some links to add'l info.
         :rtype: str
@@ -71,6 +71,7 @@ class NLPAPI(Bottle):
 HELP
 ====
 
+******** LEGACY ********
 NLP-API on readthedocs.io: https://nlp-api.readthedocs.io/en/latest/
 NLP-API on github: https://github.com/William-Lake/NLP-API
 

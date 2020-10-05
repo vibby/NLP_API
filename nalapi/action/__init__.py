@@ -1,4 +1,4 @@
-"""Action package for the nlp_api."""
+"""Action package for the nalapi."""
 import os
 import sys
 
