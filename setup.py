@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="NLP_API-pkg-vibby", # Replace with your own username
+    name="nlp_api",
     version="0.0.1",
     author="Vibby",
     author_email="contact@vibby.fr",
