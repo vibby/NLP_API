@@ -1,4 +1,6 @@
-# NLP_API
+# nalapi
+
+aka NAtural Language API
 
 A simple http api to get results from the excellent NLTK Python Naural Language Processor Toolkit.
 
