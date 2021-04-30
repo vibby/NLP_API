@@ -8,17 +8,17 @@ from bottle import Bottle
 from bottle import request
 from bottle import response
 
-from nalapi.action.abstract_action import AbstractAction
-from nalapi.action.sentence_extraction import SentenceExtraction
-from nalapi.action.word_extraction import WordExtraction
-from nalapi.action.word_pos_tagging import WordPosTagging
-from nalapi.action.phrase_extraction import PhraseExtraction
-from nalapi.action.named_entity_extraction import NamedEntityExtraction
-from nalapi.action.frequency_calculation import FrequencyCalculation
-from nalapi.action.unique_filtering import UniqueFiltering
-from nalapi.action.content_reversal import ContentReversal
-from nalapi.action.consolidation import Consolidation
-from nalapi.action.sentiment_calculation import SentimentCalculation
+from action.abstract_action import AbstractAction
+from action.sentence_extraction import SentenceExtraction
+from action.word_extraction import WordExtraction
+from action.word_pos_tagging import WordPosTagging
+from action.phrase_extraction import PhraseExtraction
+from action.named_entity_extraction import NamedEntityExtraction
+from action.frequency_calculation import FrequencyCalculation
+from action.unique_filtering import UniqueFiltering
+from action.content_reversal import ContentReversal
+from action.consolidation import Consolidation
+from action.sentiment_calculation import SentimentCalculation
 
 
 class nalapi(Bottle):
