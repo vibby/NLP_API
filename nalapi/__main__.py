@@ -63,11 +63,11 @@ def main():
 
     logging.basicConfig(level=logging_level)
 
-    nalapi = nalapi()
+    nalapiServer = nalapi()
 
-    logging.debug(f'Starting nalapi with params: [HOST: {host}, PORT: {port}]')
+    logging.debug('Starting nalapi with params: [HOST: {host}, PORT: {port}]')
 
-    nalapi.run(host=host, port=port, debug=True)
+    nalapiServer.run(host=host, port=port, debug=True)
 
 
 if __name__ == "__main__":
